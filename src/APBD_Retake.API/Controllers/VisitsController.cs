@@ -29,7 +29,8 @@ namespace APBD_Retake.API.Controllers
         {
             try
             {
-                throw new NotImplementedException();
+                var visit = await _service.GetVisitAsync(id);
+                return visit != null ? Ok(visit) : NotFound();
             }
             catch (Exception ex)
             {
