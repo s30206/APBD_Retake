@@ -9,7 +9,7 @@ public class InsertVisitDTO
     public int ClientId { get; set; }
     [Required]
     [MaxLength(14)]
-    [RegularExpression("^MECH-\\d{8}$")]
+    [RegularExpression("^MECH-\\d+$")]
     public string MechanicLicenceNumber { get; set; }
     [Required]
     public List<ServiceDTO> Services { get; set; }
