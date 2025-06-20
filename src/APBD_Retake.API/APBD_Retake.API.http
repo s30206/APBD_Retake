@@ -1,0 +1,6 @@
+@APBD_Retake.API_HostAddress = http://localhost:5228
+
+GET {{APBD_Retake.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
