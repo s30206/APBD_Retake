@@ -30,7 +30,7 @@ namespace APBD_Retake.API.Controllers
             try
             {
                 var visit = await _service.GetVisitAsync(id);
-                return visit != null ? Ok(visit) : NotFound();
+                return visit != null ? Ok(visit) : NotFound($"Visit with id {id} not found");
             }
             catch (Exception ex)
             {
